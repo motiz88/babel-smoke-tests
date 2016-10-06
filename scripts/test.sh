@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 scripts/bootstrap.sh
 
 THEM=$(cd them; pwd)
