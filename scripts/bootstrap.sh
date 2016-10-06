@@ -18,6 +18,5 @@ cd ../../packages/babel-traverse/
 npm link babylon
 cd ../../packages/babel-generator/
 npm link babylon
-make build
 popd # babel
 popd # $US
