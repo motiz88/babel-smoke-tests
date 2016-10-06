@@ -8,7 +8,7 @@ pushd $THEM/react
 npm install
 popd 
 
-./patch-deps.js
+scripts/patch-deps.js
 
 pushd $THEM/react
 npm test
