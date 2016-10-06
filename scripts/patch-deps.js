@@ -1,4 +1,4 @@
-#!/usr/bin/env Node
+#!/usr/bin/env node
 
 var getOurPackages = require('../src/getOurPackages');
 var getTheirPackages = require('../src/getTheirPackages');
