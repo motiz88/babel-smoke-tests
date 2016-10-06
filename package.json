@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "glob": "^7.1.0",
+    "js-yaml": "^3.6.1",
+    "lerna": "^2.0.0-beta.30"
+  },
+  "scripts": {
+    "test": "scripts/test.sh"
+  }
+}

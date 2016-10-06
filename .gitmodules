@@ -1,0 +1,9 @@
+[submodule "us/babel"]
+	path = us/babel
+	url = https://github.com/babel/babel
+[submodule "us/babylon"]
+	path = us/babylon
+	url = https://github.com/babel/babylon.git
+[submodule "them/react"]
+	path = them/react
+	url = https://github.com/facebook/react
