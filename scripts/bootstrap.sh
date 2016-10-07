@@ -16,6 +16,7 @@ pushd babel
 make bootstrap
 BABEL_ENV=production make build-dist
 BABEL_REPO_VERSION=`$JQ -r .version lerna.json`
+npm config set loglevel silly
 node_modules/.bin/lerna publish --force-publish=* --skip-git --yes --repo-version `$SEMVER -i $BABEL_REPO_VERSION`
 popd # babel
 popd # $US
