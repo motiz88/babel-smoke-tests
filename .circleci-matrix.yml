@@ -1,3 +1,5 @@
 env:
   - SPECIFIC_TEST=ember.js
   - SPECIFIC_TEST=react
+commands:
+  - npm test
