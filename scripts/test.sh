@@ -14,6 +14,8 @@ EOF
 
 scripts/bootstrap.sh
 
+npm cache clean
+
 THEM=$(cd them; pwd)
 
 pushd $THEM/react
