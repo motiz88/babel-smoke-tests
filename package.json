@@ -1,7 +1,8 @@
 {
   "dependencies": {
-    "verdaccio": "^2.0.1",
-    "node-jq": "^0.3.13"
+    "node-jq": "^0.3.13",
+    "sinopia-htpasswd": "^0.4.5",
+    "verdaccio": "^2.0.1"
   },
   "scripts": {
     "test": "scripts/test.sh"
