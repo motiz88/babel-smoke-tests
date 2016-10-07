@@ -10,3 +10,6 @@
 [submodule "them/ember.js"]
 	path = them/ember.js
 	url = https://github.com/emberjs/ember.js.git
+[submodule "them/jquery"]
+	path = them/jquery
+	url = https://github.com/jquery/jquery.git

@@ -23,6 +23,7 @@ export THEM=$(cd them; pwd)
 if [[ $SPECIFIC_TEST ]]; then
     scripts/tests/$SPECIFIC_TEST.sh
 else
+    scripts/tests/jquery.sh
     scripts/tests/react.sh
 fi
 
