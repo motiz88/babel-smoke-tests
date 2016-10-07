@@ -12,19 +12,23 @@ $START 'Building Babylon' bootstrap.build.babylon
 pushd $US
 pushd babylon
 npm install
-npm version patch --no-git-tag-version --ignore-scripts
-npm publish
-popd # babylon
 $END 'Done building Babylon' bootstrap.build.babylon
+$START 'Publishing Babylon test version' bootstrap.publish.babylon
+npm version patch --no-git-tag-version --ignore-scripts > /dev/null
+npm publish
+$END 'Done publishing Babylon test version' bootstrap.publish.babylon
+popd # babylon
 
 $START 'Building Babel' bootstrap.build.babel
 pushd babel
 make bootstrap
 BABEL_ENV=production make build-dist
-node_modules/.bin/lerna exec npm version patch --no-git-tag-version --ignore-scripts
+$END 'Done building Babel' bootstrap.build.babel
+$START 'Publishing Babel test versions' bootstrap.publish.babel
+node_modules/.bin/lerna exec npm version patch --no-git-tag-version --ignore-scripts > /dev/null
 node_modules/.bin/lerna exec npm publish --ignore-scripts
+$END 'Done publishing Babel test versions' bootstrap.publish.babel
 popd # babel
 popd # $US
-$END 'Done building Babel' bootstrap.build.babel
 
 $END 'Done bootstrapping our modules' bootstrap
