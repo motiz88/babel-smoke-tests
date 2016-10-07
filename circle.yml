@@ -9,3 +9,4 @@ dependencies:
   cache_directories:
     - node_modules
     - storage
+    - $HOME/.cache # for Bower cache
