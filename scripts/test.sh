@@ -2,7 +2,7 @@
 
 set -e
 
-node_modules/.bin/verdaccio &
+node_modules/.bin/verdaccio -l localhost:4873 -c verdaccio.yml &
 
 npm set registry http://localhost:4873/
 
