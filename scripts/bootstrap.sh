@@ -9,7 +9,7 @@ SEMVER=$(pwd)/node_modules/.bin/SEMVER
 pushd $US
 pushd babylon
 npm install
-npm version patch
+npm version patch --no-git-tag-version
 npm publish
 popd # babylon
 pushd babel
