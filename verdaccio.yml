@@ -19,6 +19,14 @@ uplinks:
     url: https://registry.npmjs.org/
 
 packages:
+  'babel':
+    storage: 'uncached_storage'
+    access: $all
+    publish: $authenticated
+
+    # if package is not available locally, proxy requests to 'npmjs' registry
+    proxy: npmjs
+
   'babel-*':
     storage: 'uncached_storage'
     access: $all
