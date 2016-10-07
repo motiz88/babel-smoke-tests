@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "semver": "^5.3.0",
     "sinopia-simpleauth": "^0.1.0",
     "verdaccio": "^2.0.1"
   },

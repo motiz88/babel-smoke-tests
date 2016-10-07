@@ -3,8 +3,6 @@
 set -e
 
 US=$(cd us; pwd)
-JQ=jq
-SEMVER=$(pwd)/node_modules/.bin/semver
 
 pushd $US
 pushd babylon
@@ -15,8 +13,7 @@ popd # babylon
 pushd babel
 make bootstrap
 BABEL_ENV=production make build-dist
-BABEL_REPO_VERSION=`$JQ -r .version lerna.json`
-npm config set loglevel silly
-node_modules/.bin/lerna publish --force-publish=* --skip-git --yes --repo-version `$SEMVER -i $BABEL_REPO_VERSION`
+node_modules/.bin/lerna exec npm version patch --no-git-tag-version --ignore-scripts
+node_modules/.bin/lerna exec npm publish --ignore-scripts
 popd # babel
 popd # $US
