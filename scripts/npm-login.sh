@@ -2,8 +2,10 @@
 
 REGISTRY=http://localhost:4873/
 
-npm adduser --registry=$REGISTRY <<EOF
+npm adduser --loglevel silly --registry=$REGISTRY <<EOF
 smoketest
 smoketest
 smoketest@babeljs.io
 EOF
+
+npm whoami --loglevel silly
