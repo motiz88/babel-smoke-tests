@@ -4,19 +4,11 @@ US=$(cd us; pwd)
 
 pushd $US
 pushd babylon
-npm link
-npm run build
+npm publish
 popd # babylon
 pushd babel
 make bootstrap
-npm link babylon
-cd packages/babel-core/
-npm link babylon
-cd ../../packages/babel-template/
-npm link babylon
-cd ../../packages/babel-traverse/
-npm link babylon
-cd ../../packages/babel-generator/
-npm link babylon
+BABEL_ENV=production make build-dist
+./node_modules/.bin/lerna publish --only-explicit-updates --skip-git --yes
 popd # babel
 popd # $US

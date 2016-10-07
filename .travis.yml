@@ -4,6 +4,3 @@ node_js:
 cache:
   directories:
   - node_modules
-  - us/babel/node_modules
-  - us/babylon/node_modules
-  - them/react/node_modules
