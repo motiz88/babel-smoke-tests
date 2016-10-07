@@ -13,3 +13,5 @@ cache:
     - $HOME/.cache # for Bower cache
     - us/babel/node_modules
     - us/babylon/node_modules
+git:
+  submodule_depth: 1
