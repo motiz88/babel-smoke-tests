@@ -6,10 +6,13 @@ node_modules/.bin/verdaccio -l localhost:4873 -c verdaccio.yml &
 
 REGISTRY=http://localhost:4873/
 npm config --global set registry $REGISTRY --loglevel silly
+npm config list
 
 NPM_LOGIN=$(pwd)/scripts/npm-login.sh
 
 $NPM_LOGIN
+
+npm config list
 
 scripts/bootstrap.sh
 
