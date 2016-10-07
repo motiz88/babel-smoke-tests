@@ -39,6 +39,16 @@ packages:
     # if package is not available locally, proxy requests to 'npmjs' registry
     proxy: npmjs
 
+  'babel-*':
+    storage: 'uncached_storage'
+    access: $all
+    publish: $authenticated
+
+  'babylon':
+    storage: 'uncached_storage'
+    access: $all
+    publish: $authenticated
+
 # log settings
 logs:
   - {type: stdout, format: pretty, level: warn}
