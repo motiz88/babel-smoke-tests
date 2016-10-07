@@ -1,6 +1,9 @@
 language: node_js
 node_js:
   - "6"
+env:
+  - SPECIFIC_TEST=ember.js
+  - SPECIFIC_TEST=react
 cache:
   directories:
     - node_modules

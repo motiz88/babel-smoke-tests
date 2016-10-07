@@ -12,18 +12,13 @@ $NPM_LOGIN
 
 scripts/bootstrap.sh
 
-THEM=$(cd them; pwd)
+export THEM=$(cd them; pwd)
 
-pushd $THEM/react
-npm install
-npm test
-popd
-
-pushd $THEM/ember.js
-npm install -g bower
-npm install
-bower install
-npm test
-popd
+if [[ $SPECIFIC_TEST ]]; then
+    scripts/tests/$SPECIFIC_TEST.sh
+else
+    scripts/tests/ember.js.sh
+    scripts/tests/react.sh
+fi
 
 [[ -z "$(jobs -p)" ]] || kill $(jobs -p)
