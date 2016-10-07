@@ -10,8 +10,8 @@
 storage: ./storage
 
 auth:
-  htpasswd:
-    file: ./htpasswd
+  simpleauth:
+    smoketest: smoketest
 
 # a list of other known repositories we can talk to
 uplinks:
