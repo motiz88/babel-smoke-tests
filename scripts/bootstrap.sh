@@ -3,8 +3,8 @@
 set -e
 
 US=$(cd us; pwd)
-JQ=$(pwd)/node_modules/.bin/jq
-SEMVER=$(pwd)/node_modules/.bin/SEMVER
+JQ=jq
+SEMVER=$(pwd)/node_modules/.bin/semver
 
 pushd $US
 pushd babylon
