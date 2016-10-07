@@ -15,7 +15,7 @@ popd # babylon
 pushd babel
 make bootstrap
 BABEL_ENV=production make build-dist
-BABEL_REPO_VERSION=$(JQ -r .version lerna.json)
-node_modules/.bin/lerna publish --only-explicit-updates --skip-git --yes --repo-version $(SEMVER -i $BABEL_REPO_VERSION)
+BABEL_REPO_VERSION=`$JQ -r .version lerna.json`
+node_modules/.bin/lerna publish --only-explicit-updates --skip-git --yes --repo-version `$SEMVER -i $BABEL_REPO_VERSION`
 popd # babel
 popd # $US
