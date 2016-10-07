@@ -4,9 +4,10 @@ set -e
 
 node_modules/.bin/verdaccio -l localhost:4873 -c verdaccio.yml &
 
-npm set registry http://localhost:4873/
+REGISTRY=http://localhost:4873/
+npm set registry $REGISTRY
 
-npm adduser <<EOF
+npm adduser --registry=$REGISTRY <<EOF
 smoketest
 smoketest
 smoketest@babeljs.io
