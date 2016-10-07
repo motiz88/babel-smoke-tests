@@ -1,0 +1,10 @@
+machine:
+  node:
+    version: 6
+dependencies:
+  pre:
+    - sudo apt-get update && sudo apt-get install jq
+dependencies:
+  cache_directories:
+  - node_modules
+  - storage
