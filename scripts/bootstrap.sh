@@ -4,6 +4,7 @@ US=$(cd us; pwd)
 
 pushd $US
 pushd babylon
+npm install
 npm publish
 popd # babylon
 pushd babel
