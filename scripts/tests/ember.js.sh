@@ -14,7 +14,7 @@ bower install
 BROCCOLI_ENV=production npm run build
 $END 'Done building Ember.js' tests.ember.js.build
 $START 'Testing Ember.js' tests.ember.js.test
-TEST_SUITE=each-package-tests DISABLE_JSCS=true DISABLE_JSHINT=true BROCCOLI_ENV=production npm test
+TEST_SUITE=built-tests EMBER_ENV=production DISABLE_JSCS=true DISABLE_JSHINT=true BROCCOLI_ENV=production npm test
 popd
 
 $END 'Done testing Ember.js' tests.ember.js.test
