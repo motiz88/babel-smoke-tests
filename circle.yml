@@ -5,5 +5,5 @@ dependencies:
   pre:
     - sudo apt-get update && sudo apt-get install jq
   cache_directories:
-  - node_modules
-  - storage
+    - node_modules
+    - storage
