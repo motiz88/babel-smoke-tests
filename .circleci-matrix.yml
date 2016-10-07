@@ -1,0 +1,4 @@
+env:
+  - SPECIFIC_TEST=react
+commands:
+  - npm test
