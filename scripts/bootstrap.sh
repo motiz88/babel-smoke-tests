@@ -26,7 +26,7 @@ BABEL_ENV=production make build-dist
 $END 'Done building Babel' bootstrap.build.babel
 $START 'Publishing Babel test versions' bootstrap.publish.babel
 node_modules/.bin/lerna exec -- npm version patch --no-git-tag-version --ignore-scripts > /dev/null
-node_modules/.bin/lerna exec --concurrency 1 -- npm publish --force --ignore-scripts
+node_modules/.bin/lerna exec -- npm publish --force --ignore-scripts
 $END 'Done publishing Babel test versions' bootstrap.publish.babel
 popd # babel
 popd # $US
