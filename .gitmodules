@@ -7,3 +7,6 @@
 [submodule "them/react"]
 	path = them/react
 	url = https://github.com/facebook/react
+[submodule "them/ember.js"]
+	path = them/ember.js
+	url = https://github.com/emberjs/ember.js.git

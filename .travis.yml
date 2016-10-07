@@ -1,7 +1,16 @@
+sudo: required
+dist: trusty
 language: node_js
 node_js:
   - "6"
+env:
+  - SPECIFIC_TEST=react
 cache:
   directories:
     - node_modules
     - storage
+    - $HOME/.cache # for Bower cache
+    - us/babel/node_modules
+    - us/babylon/node_modules
+git:
+  submodule_depth: 1
