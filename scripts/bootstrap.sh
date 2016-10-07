@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 US=$(cd us; pwd)
-JQ=$(pwd)/node_modules/jq
+JQ=$(pwd)/node_modules/.bin/jq
 
 pushd $US
 pushd babylon
