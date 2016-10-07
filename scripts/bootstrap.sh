@@ -2,17 +2,14 @@
 
 US=$(cd us; pwd)
 JQ=$(pwd)/node_modules/.bin/jq
-NPM_LOGIN=$(pwd)/scripts/npm-login.sh
 
 pushd $US
 pushd babylon
-$NPM_LOGIN
 npm install
 npm whoami
 npm publish
 popd # babylon
 pushd babel
-$NPM_LOGIN
 make bootstrap
 BABEL_ENV=production make build-dist
 npm whoami

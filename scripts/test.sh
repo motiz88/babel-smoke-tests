@@ -18,7 +18,6 @@ npm cache clean
 THEM=$(cd them; pwd)
 
 pushd $THEM/react
-$NPM_LOGIN
 npm install
 npm test
 popd
