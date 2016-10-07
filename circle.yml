@@ -20,4 +20,4 @@ dependencies:
     - us/babylon/node_modules
 test:
   override:
-    - true
+    - echo OK.
