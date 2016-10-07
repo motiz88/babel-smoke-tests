@@ -13,4 +13,6 @@ THEM=$(cd them; pwd)
 pushd $THEM/react
 npm install
 npm test
-popd 
+popd
+
+[[ -z "$(jobs -p)" ]] || kill $(jobs -p)
