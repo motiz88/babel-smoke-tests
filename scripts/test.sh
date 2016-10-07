@@ -19,4 +19,11 @@ npm install
 npm test
 popd
 
+pushd $THEM/ember.js
+npm install -g bower
+npm install
+bower install
+npm test
+popd
+
 [[ -z "$(jobs -p)" ]] || kill $(jobs -p)
