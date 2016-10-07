@@ -1,6 +1,10 @@
 machine:
   node:
     version: 6
+checkout:
+  post:
+    - git submodule sync --recursive
+    - git submodule update --recursive --init
 dependencies:
   pre:
     - sudo apt-get update && sudo apt-get install jq
