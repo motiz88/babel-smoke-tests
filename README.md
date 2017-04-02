@@ -1,5 +1,7 @@
 # babel-smoke-tests 🌋 [![Travis Build Status](https://travis-ci.org/motiz88/babel-smoke-tests.svg?branch=master)](https://travis-ci.org/motiz88/babel-smoke-tests)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/motiz88/babel-smoke-tests.svg)](https://greenkeeper.io/)
+
 
 This is a proof-of-concept setup inspired by discussion in [babel/babel#1837](https://github.com/babel/babel/issues/1837).
 
