@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "sinopia-simpleauth": "^0.1.0",
-    "verdaccio": "^2.0.1"
+    "verdaccio": "^2.4.0"
   },
   "scripts": {
     "test": "scripts/test.sh"
